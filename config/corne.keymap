@@ -54,5 +54,38 @@
 
             label = "Functions";
         };
+
+        gamer {
+            bindings = <
+&kp N3  &kp TAB     &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
+&kp N2  &kp LSHIFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
+&kp N1  &kp LCTRL   &kp Z  &kp X  &kp C  &kp V        &none  &none  &none  &none  &none  &none
+                           &mo 5  &mo 4  &kp SPACE    &none  &none  &none
+            >;
+
+            label = "Gamer";
+        };
+
+        gamer_extra {
+            bindings = <
+&kp ESC         &kp Q  &kp W  &kp F  &kp P  &kp G    &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S  &kp T  &kp D    &none  &none  &none  &none  &none  &none
+&kp F1          &kp Z  &kp X  &kp C  &kp V  &kp B    &none  &none  &none  &none  &none  &none
+                              &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "Gamer Extra";
+        };
+
+        gamer_extra2 {
+            bindings = <
+&kp BSPC    &kp J  &kp L  &kp U      &kp Y    &kp SEMI    &none  &none  &none  &none  &none  &none
+&kp ENTER   &kp H  &kp N  &kp E      &kp I    &kp O       &none  &none  &none  &none  &none  &none
+&kp DELETE  &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &none  &none  &none  &none  &none  &none
+                          &none      &none    &none       &none  &none  &none
+            >;
+
+            label = "Gamer Extra Extra";
+        };
     };
 };
