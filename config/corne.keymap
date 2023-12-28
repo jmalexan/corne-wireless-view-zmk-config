@@ -70,10 +70,10 @@
 
         gamer {
             bindings = <
-&kp N1  &kp NUMBER_2  &kp Q  &kp W            &kp E  &kp R        &none  &none  &none  &none  &none  &none
-&kp X   &kp LSHIFT    &kp A  &kp S            &kp D  &kp F        &none  &none  &none  &none  &none  &none
-&kp N3  &kp LCTRL     &kp Z  &kp X            &kp C  &kp V        &none  &none  &none  &none  &none  &to 0
-                             &gamer_behavior  &mo 4  &kp SPACE    &none  &none  &none
+&kp N3  &kp N4      &kp Q  &kp W            &kp E  &kp R        &none  &none  &none  &none  &none  &none
+&kp N2  &kp LSHIFT  &kp A  &kp S            &kp D  &kp F        &none  &none  &none  &none  &none  &none
+&kp N1  &kp LCTRL   &kp Z  &kp X            &kp C  &kp V        &none  &none  &none  &none  &none  &to 0
+                           &gamer_behavior  &mo 4  &kp SPACE    &none  &none  &none
             >;
 
             label = "Gamer";
