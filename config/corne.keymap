@@ -25,14 +25,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        default {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            label = "Base";
+            label = "Default";
             bindings = <
 &kp ESCAPE        &kp Q        &kp W       &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y         &kp SEMICOLON    &kp BACKSPACE
 &mt LEFT_GUI TAB  &kp A        &kp R       &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I         &kp O            &mt RIGHT_META SQT
@@ -65,7 +65,7 @@
                                         &none         &kp C_STOP    &kp C_PLAY_PAUSE    &none       &trans      &none
             >;
 
-            label = "Functions";
+            label = "Funcs";
         };
 
         gamer {
@@ -83,11 +83,11 @@
             bindings = <
 &kp ESC     &kp F1  &kp N1  &kp N2  &kp N3  &kp T    &none  &none  &none  &none  &none  &none
 &kp TAB     &kp N0  &kp N4  &kp N5  &kp N6  &kp G    &none  &none  &none  &none  &none  &none
-&kp LSHIFT  &none   &kp N7  &kp N8  &kp N9  &kp B    &none  &none  &none  &none  &none  &none
+&kp LSHIFT  &mo 7   &kp N7  &kp N8  &kp N9  &kp B    &none  &none  &none  &none  &none  &none
                             &none   &none   &none    &none  &none  &none
             >;
 
-            label = "Gamer Nums";
+            label = "G-Nums";
         };
 
         gamer_extra {
@@ -98,7 +98,7 @@
                               &none  &none  &none    &none  &none  &none
             >;
 
-            label = "Gamer Extra";
+            label = "G-Extra";
         };
 
         gamer_extra2 {
@@ -109,7 +109,18 @@
                           &none      &none    &none       &none  &none  &none
             >;
 
-            label = "Gamer Extra Extra";
+            label = "G-Extra 2";
+        };
+
+        gamer_arrows {
+            bindings = <
+&trans  &trans  &trans    &kp UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans     &trans    &trans  &trans  &trans
+            >;
+
+            label = "G-Arrows";
         };
     };
 };
