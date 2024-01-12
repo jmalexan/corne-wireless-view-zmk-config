@@ -21,11 +21,11 @@
             bindings = <&mo 6>, <&mo 7>;
         };
 
-        numbols_nav: numbols_nav {
+        gamer_access: gamer_access {
             compatible = "zmk,behavior-tap-dance";
-            label = "NUMBOLS_NAV";
+            label = "GAMER_ACCESS";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 3>, <&to 4>;
         };
     };
 
@@ -41,10 +41,10 @@
 
             label = "Default";
             bindings = <
-&kp ESCAPE        &kp Q        &kp W       &kp F  &kp P         &kp G        &kp J    &kp L  &kp U      &kp Y         &kp SEMICOLON    &kp BACKSPACE
-&mt LEFT_GUI TAB  &kp A        &kp R       &kp S  &kp T         &kp D        &kp H    &kp N  &kp E      &kp I         &kp O            &mt RIGHT_META SQT
-&kp LSHIFT        &mt LCTRL Z  &mt LALT X  &kp C  &kp V         &kp B        &kp K    &kp M  &kp COMMA  &mt RALT DOT  &mt RCTRL SLASH  &kp RSHIFT
-                                           &to 4  &numbols_nav  &kp SPACE    &kp RET  &mo 1  &mo 3
+&kp ESCAPE        &kp Q        &kp W       &kp F  &kp P  &kp G        &kp J    &kp L  &kp U          &kp Y         &kp SEMICOLON    &kp BACKSPACE
+&mt LEFT_GUI TAB  &kp A        &kp R       &kp S  &kp T  &kp D        &kp H    &kp N  &kp E          &kp I         &kp O            &mt RIGHT_META SQT
+&kp LSHIFT        &mt LCTRL Z  &mt LALT X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA      &mt RALT DOT  &mt RCTRL SLASH  &kp RSHIFT
+                                           &mo 2  &mo 1  &kp SPACE    &kp RET  &mo 1  &gamer_access
             >;
         };
 
@@ -66,10 +66,10 @@
 
         nav {
             bindings = <
-&trans     &trans     &kp HOME  &kp UP    &kp END    &kp PAGE_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LGUI   &kp LALT   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp LCTRL  &none     &trans    &trans     &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans    &trans     &trans           &trans  &trans  &trans
+&kp PAGE_DOWN  &kp PAGE_UP  &kp HOME  &kp UP    &kp END    &none    &none  &none  &none  &none  &none  &none
+&kp LGUI       &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT  &none    &none  &none  &none  &none  &none  &none
+&kp LSHFT      &kp LCTRL    &none     &none     &none      &none    &none  &none  &none  &none  &none  &none
+                                      &none     &none      &none    &none  &none  &none
             >;
 
             label = "Nav";
