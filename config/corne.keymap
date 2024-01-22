@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    flavor = "balanced";
-    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -28,6 +28,13 @@
             #binding-cells = <0>;
             bindings = <&mo 3>, <&to 4>;
         };
+
+        nav_fn: nav_fn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NAV_FN";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&mo 3>;
+        };
     };
 
     keymap {
@@ -42,10 +49,10 @@
 
             label = "Default";
             bindings = <
-&kp ESCAPE        &kp Q           &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U          &kp Y       &kp SEMICOLON    &kp BACKSPACE
-&mt LEFT_GUI TAB  &mt LEFT_ALT A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E          &kp I       &mt RIGHT_ALT O  &mt RIGHT_META SQT
-&kp LSHIFT        &mt LCTRL Z     &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA      &kp PERIOD  &mt RCTRL SLASH  &kp RSHIFT
-                                         &mo 2  &mo 1  &kp SPACE    &kp RET  &mo 1  &gamer_access
+&kp ESCAPE        &kp Q           &kp W  &kp F    &kp P  &kp G        &kp J    &kp L  &kp U          &kp Y       &kp SEMICOLON    &kp BACKSPACE
+&mt LEFT_GUI TAB  &mt LEFT_ALT A  &kp R  &kp S    &kp T  &kp D        &kp H    &kp N  &kp E          &kp I       &mt RIGHT_ALT O  &mt RIGHT_META SQT
+&kp LSHIFT        &mt LCTRL Z     &kp X  &kp C    &kp V  &kp B        &kp K    &kp M  &kp COMMA      &kp PERIOD  &mt RCTRL SLASH  &kp RSHIFT
+                                         &nav_fn  &mo 1  &kp SPACE    &kp RET  &mo 1  &gamer_access
             >;
         };
 
@@ -58,9 +65,9 @@
 
             label = "Numbols";
             bindings = <
-&kp BSPC                &kp DEL            &kp N7        &kp N8        &kp N9        &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH                 &kp BACKSPACE
-&mt LEFT_META ASTERISK  &mt LEFT_ALT PLUS  &kp N4        &kp N5        &kp N6        &kp PERIOD    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR       &kp PERCENT  &mt RIGHT_ALT AMPERSAND  &mt RMETA BACKSLASH
-&mt LSHIFT SLASH        &mt LCTRL MINUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE   &kp GRAVE    &mt RCTRL TILDE          &mt RSHIFT PIPE
+&kp BSPC                &kp DEL            &kp N7        &kp N8        &kp N9        &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH             &kp UNDERSCORE
+&mt LEFT_META ASTERISK  &mt LEFT_ALT PLUS  &kp N4        &kp N5        &kp N6        &kp PERIOD    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR       &kp PERCENT  &mt RIGHT_ALT CARET  &mt RMETA BACKSLASH
+&mt LSHIFT SLASH        &mt LCTRL MINUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND    &kp GRAVE    &mt RCTRL TILDE      &mt RSHIFT PIPE
                                                          &none         &none         &kp SPACE     &kp ENTER             &none                  &none
             >;
         };
