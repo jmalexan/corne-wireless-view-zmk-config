@@ -65,10 +65,10 @@
 
             label = "Numbols";
             bindings = <
-&kp BSPC                &kp DEL            &kp N7        &kp N8        &kp N9        &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH             &kp UNDERSCORE
-&mt LEFT_META ASTERISK  &mt LEFT_ALT PLUS  &kp N4        &kp N5        &kp N6        &kp PERIOD    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR       &kp PERCENT  &mt RIGHT_ALT CARET  &mt RMETA BACKSLASH
-&mt LSHIFT SLASH        &mt LCTRL MINUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND    &kp GRAVE    &mt RCTRL TILDE      &mt RSHIFT PIPE
-                                                         &none         &none         &kp SPACE     &kp ENTER             &none                  &none
+&kp BSPC                &kp DEL            &kp N7        &kp N8        &kp N9        &kp EQUAL     &kp EXCLAMATION  &kp AT     &kp HASH       &kp DOLLAR      &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS
+&mt LEFT_META ASTERISK  &mt LEFT_ALT PLUS  &kp N4        &kp N5        &kp N6        &kp PERIOD    &kp PERCENT      &kp CARET  &kp AMPERSAND  &kp UNDERSCORE  &mt RIGHT_ALT LEFT_BRACKET  &mt RMETA RIGHT_BRACKET
+&mt LSHIFT SLASH        &mt LCTRL MINUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp GRAVE        &kp TILDE  &kp BACKSLASH  &kp PIPE        &mt RCTRL LEFT_BRACE        &mt RSHIFT RIGHT_BRACE
+                                                         &none         &none         &kp SPACE     &kp ENTER        &none      &none
             >;
         };
 
