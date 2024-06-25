@@ -74,10 +74,10 @@
 
         nav {
             bindings = <
-&none      &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP      &none  &none  &none  &none  &none  &none
-&kp LGUI   &kp LALT   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN    &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp LCTRL  &none     &none     &none      &none            &none  &none  &none  &none  &none  &none
-                                &none     &none      &none            &none  &none  &none
+&kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp UP    &kp END    &none    &none  &none  &none  &none  &none  &none
+&kp LGUI     &kp LALT       &kp LEFT  &kp DOWN  &kp RIGHT  &none    &none  &none  &none  &none  &none  &none
+&kp LSHFT    &kp LCTRL      &none     &none     &none      &none    &none  &none  &none  &none  &none  &none
+                                      &none     &none      &none    &none  &none  &none
             >;
 
             label = "Nav";
