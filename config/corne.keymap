@@ -37,6 +37,52 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        left-numbols {
+            bindings = <&mo 2>;
+            key-positions = <37 16>;
+            slow-release;
+            layers = <0>;
+        };
+
+        left-nav {
+            bindings = <&mo 3>;
+            key-positions = <37 15>;
+            layers = <0>;
+            slow-release;
+        };
+
+        left-functions {
+            bindings = <&mo 4>;
+            key-positions = <37 14>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right-numbols {
+            bindings = <&mo 2>;
+            key-positions = <40 19>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right-nav {
+            bindings = <&mo 3>;
+            key-positions = <40 20>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right-functions {
+            bindings = <&mo 4>;
+            key-positions = <40 21>;
+            layers = <0>;
+            slow-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,9 +95,9 @@
 
             label = "Default";
             bindings = <
-&kp ESCAPE        &kp Q           &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y       &kp SEMICOLON    &kp BACKSPACE
-&mt LEFT_GUI TAB  &mt LEFT_ALT A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I       &mt RIGHT_ALT O  &mt RIGHT_META SQT
-&kp LSHIFT        &mt LCTRL Z     &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp PERIOD  &mt RCTRL SLASH  &kp RSHIFT
+&kp ESCAPE        &kp Q           &kp W  &kp F           &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y       &kp SEMICOLON    &kp BACKSPACE
+&mt LEFT_GUI TAB  &mt LEFT_ALT A  &kp R  &kp S           &kp T  &kp D        &kp H    &kp N  &kp E      &kp I       &mt RIGHT_ALT O  &mt RIGHT_META SQT
+&kp LSHIFT        &mt LCTRL Z     &kp X  &kp C           &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp PERIOD  &mt RCTRL SLASH  &kp RSHIFT
                                          &studio_unlock  &mo 1  &kp SPACE    &kp RET  &mo 1  &none
             >;
         };
