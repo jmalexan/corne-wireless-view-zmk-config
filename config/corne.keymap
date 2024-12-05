@@ -14,29 +14,6 @@
 };
 
 / {
-    behaviors {
-        gamer_behavior: gamer_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GAMER_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&mo 7>, <&mo 8>;
-        };
-
-        gamer_access: gamer_access {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GAMER_ACCESS";
-            #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 5>;
-        };
-
-        nav_fn: nav_fn {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NAV_FN";
-            #binding-cells = <0>;
-            bindings = <&mo 3>, <&mo 4>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -80,6 +57,11 @@
             key-positions = <40 21>;
             layers = <0>;
             slow-release;
+        };
+
+        gamer-access {
+            bindings = <&to 5>;
+            key-positions = <37 40>;
         };
     };
 
@@ -153,10 +135,10 @@
 
         gamer {
             bindings = <
-&kp N3  &kp N4      &kp Q  &kp W            &kp E  &kp R        &none  &none  &none  &none  &none  &none
-&kp N2  &kp LSHIFT  &kp A  &kp S            &kp D  &kp F        &none  &none  &none  &none  &none  &none
-&kp N1  &kp LCTRL   &kp Z  &kp X            &kp C  &kp V        &none  &none  &none  &none  &none  &to 0
-                           &gamer_behavior  &mo 6  &kp SPACE    &none  &none  &none
+&kp N3  &kp N4      &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
+&kp N2  &kp LSHIFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
+&kp N1  &kp LCTRL   &kp Z  &kp X  &kp C  &kp V        &none  &none  &none  &none  &none  &to 0
+                           &none  &mo 6  &kp SPACE    &none  &none  &none
             >;
 
             label = "Gamer";
