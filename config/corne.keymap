@@ -19,48 +19,6 @@
     combos {
         compatible = "zmk,combos";
 
-        left-numbols {
-            bindings = <&mo 2>;
-            key-positions = <37 16>;
-            slow-release;
-            layers = <0>;
-        };
-
-        left-nav {
-            bindings = <&mo 3>;
-            key-positions = <37 15>;
-            layers = <0>;
-            slow-release;
-        };
-
-        left-functions {
-            bindings = <&mo 4>;
-            key-positions = <37 14>;
-            layers = <0>;
-            slow-release;
-        };
-
-        right-numbols {
-            bindings = <&mo 2>;
-            key-positions = <40 19>;
-            layers = <0>;
-            slow-release;
-        };
-
-        right-nav {
-            bindings = <&mo 3>;
-            key-positions = <40 20>;
-            layers = <0>;
-            slow-release;
-        };
-
-        right-functions {
-            bindings = <&mo 4>;
-            key-positions = <40 21>;
-            layers = <0>;
-            slow-release;
-        };
-
         gamer-access {
             bindings = <&to 5>;
             key-positions = <37 40>;
