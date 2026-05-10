@@ -20,7 +20,7 @@
         compatible = "zmk,combos";
 
         gamer-access {
-            bindings = <&to 5>;
+            bindings = <&to 3>;
             key-positions = <37 40>;
         };
     };
@@ -33,12 +33,10 @@
             bindings = <
 &kp ESC  &kp Q             &kp W           &kp F            &kp P            &kp G        &kp J    &kp L             &kp U            &kp Y           &kp SEMI         &kp DEL
 &none    &mt LGUI A        &mt LALT R      &mt LCTRL S      &mt LSHFT T      &kp D        &kp H    &mt RSHFT N       &mt RCTRL E      &mt RALT I      &mt RGUI O       &kp SQT
-&mo 4    &kp Z             &kp X           &kp C            &kp V            &kp B        &kp K    &kp M             &kp COMMA        &kp DOT         &kp FSLH         &mo 4
-                                           &mo 2            &kp BSPC         &kp SPACE    &kp RET  &kp TAB           &mo 2
+&mo 2    &kp Z             &kp X           &kp C            &kp V            &kp B        &kp K    &kp M             &kp COMMA        &kp DOT         &kp FSLH         &mo 2
+                                           &mo 1            &kp BSPC         &kp SPACE    &kp RET  &kp TAB           &mo 1
             >;
         };
-
-        spare1 { status = "reserved"; };
 
         numbols {
             display-name = "Numbols";
@@ -49,8 +47,6 @@
                                  &trans  &trans  &trans       &trans       &trans     &trans
             >;
         };
-
-        spare2 { status = "reserved"; };
 
         functions {
             display-name = "Funcs";
@@ -65,10 +61,10 @@
         gamer {
             display-name = "Gamer";
             bindings = <
-&kp N3  &kp N4      &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &to 10
+&kp N3  &kp N4      &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &to 8
 &kp N2  &kp LSHFT   &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
 &kp N1  &kp LCTRL   &kp Z  &kp X  &kp C  &kp V        &none  &none  &none  &none  &none  &to 0
-                           &to 7  &mo 6  &kp SPACE    &none  &none  &none
+                           &to 5  &mo 4  &kp SPACE    &none  &none  &none
             >;
         };
 
@@ -77,7 +73,7 @@
             bindings = <
 &kp ESC    &kp F1  &kp N7  &kp N8  &kp N9  &kp T    &none  &none  &none  &none  &none  &none
 &kp TAB    &kp N0  &kp N4  &kp N5  &kp N6  &kp G    &none  &none  &none  &none  &none  &none
-&kp LSHFT  &mo 9   &kp N1  &kp N2  &kp N3  &kp B    &none  &none  &none  &none  &none  &none
+&kp LSHFT  &mo 7   &kp N1  &kp N2  &kp N3  &kp B    &none  &none  &none  &none  &none  &none
                            &none   &none   &none    &none  &none  &none
             >;
         };
@@ -88,7 +84,7 @@
 &kp ESC    &kp Q  &kp W  &kp F  &kp P  &kp G    &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp A  &kp R  &kp S  &kp T  &kp D    &none  &none  &none  &none  &none  &none
 &kp F1     &kp Z  &kp X  &kp C  &kp V  &kp B    &none  &none  &none  &none  &none  &to 0
-                         &to 8  &to 5  &kp SPACE    &none  &none  &none
+                         &to 6  &to 3  &kp SPACE    &none  &none  &none
             >;
         };
 
@@ -98,7 +94,7 @@
 &kp BSPC  &kp J  &kp L  &kp U      &kp Y    &kp SEMI    &none  &none  &none  &none  &none  &none
 &kp RET   &kp H  &kp N  &kp E      &kp I    &kp O       &none  &none  &none  &none  &none  &none
 &kp DEL   &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &none  &none  &none  &none  &none  &to 0
-                        &to 7      &to 5    &kp SPACE   &none  &none  &none
+                        &to 5      &to 3    &kp SPACE   &none  &none  &none
             >;
         };
 
@@ -115,10 +111,10 @@
         gamer_league {
             display-name = "G-League";
             bindings = <
-&kp ESC   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &none  &none  &none  &none  &none  &to 5
+&kp ESC   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &none  &none  &none  &none  &none  &to 3
 &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp N6    &none  &none  &none  &none  &none  &none
 &kp LALT  &kp A   &kp S   &kp D   &kp F   &kp N7    &none  &none  &none  &none  &none  &to 0
-                          &none   &mo 11  &kp SPACE    &none  &none  &none
+                          &none   &mo 9   &kp SPACE    &none  &none  &none
             >;
         };
 
@@ -131,6 +127,10 @@
                                &none       &none       &none    &none  &none  &none
             >;
         };
+
+        extra1 { status = "reserved"; };
+
+        extra2 { status = "reserved"; };
 
         extra3 { status = "reserved"; };
 
