@@ -8,12 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
-    chosen {
-        zephyr,console = &snippet_studio_rpc_usb_uart;
-    };
-};
-
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <100>;
